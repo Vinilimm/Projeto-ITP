@@ -5,7 +5,7 @@
 void main()
 {
     int escolha = 0;
-
+    Tabela tabelas[10]
     while (escolha != 8)
     {
         printmenu();
