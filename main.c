@@ -1,19 +1,20 @@
 #include <stdio.h>
+#include <string.h>
 #include "SGDB.h"
 
-
-void main()
+int main()
 {
     int escolha = 0;
-    Tabela tabelas[10]
-    while (escolha != 8)
+    Tabela tabelas[10];
+    int qtdTabelas = -1;
+        while (escolha != 8)
     {
         printmenu();
         scanf("%d", &escolha);
         switch (escolha)
         {
         case 1:
-            /* code */
+           criartabela(tabelas, qtdTabelas);
             break;
 
         case 2:
@@ -36,4 +37,5 @@ void main()
             break;
         }
     }
+    return 0;
 }

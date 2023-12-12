@@ -4,10 +4,13 @@
 typedef struct 
 {
     unsigned int chavePrimaria;  
-    //descobrir quais variaveis botar
+    char *nome;
+    char *nomeColuna;
+    int qtdColunas;
 }Tabela;
 
 
 void printmenu();
 
+void criartabela(Tabela tabelas[], int qtdTabelas);
 #endif
